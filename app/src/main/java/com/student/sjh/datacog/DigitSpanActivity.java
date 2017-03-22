@@ -5,16 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class DigitSpanActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_digit_span);
     }
-
-    public void startPressed(View v){
-        Intent mainIntent = new Intent(v.getContext(), DigitSpanActivity.class);
-        startActivityForResult(mainIntent, 0);
+    public void backPressed(View view){
+        Intent intent = new Intent();
+        setResult(RESULT_OK,intent);
+        finish();
     }
 }
