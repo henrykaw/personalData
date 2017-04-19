@@ -110,10 +110,15 @@ public class Stroop extends AppCompatActivity {
     }*/
 
     public void startStroop(View view){
-        understood.setVisibility(View.GONE);
-        buttonsGridlayout.setVisibility(View.VISIBLE);
-        tStart = System.currentTimeMillis();
-        newColorText();
+        if (gameCount <3) {
+            understood.setVisibility(View.GONE);
+            buttonsGridlayout.setVisibility(View.VISIBLE);
+            tStart = System.currentTimeMillis();
+            newColorText();
+        }else if (gameCount == 3){
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
     }
     public void checkChoice(String cl){
         if (cl.equalsIgnoreCase(getString(R.string.purple))){
@@ -252,7 +257,6 @@ public class Stroop extends AppCompatActivity {
     }
 
     private void newColorText(){
-        //stroopTv.setVisibility(View.INVISIBLE);
 
         dTime = getTimeElapse();
         if (dTime < 20000){
