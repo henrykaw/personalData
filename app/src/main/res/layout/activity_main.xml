@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/temp_img"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/button"

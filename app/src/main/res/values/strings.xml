@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">DataCog</string>
     <string name="b_start">Start</string>
-    <string name="digit_test">This is the new activity</string>
+    <string name="digit_test">This is the new activity.</string>
     <string name="b_back">Back</string>
+    <string name="stroop_letters">Name the color of the letters.</string>
+    <string name="stroop_word">Tap the matching button of the spelled word.</string>
+    <string name="stroop_end">Exercise completed, tap the button below to continue.</string>
+    <string name="understood">Understood</string>
+    <string name="purple">Purple</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
+    <string name="orange">Orange</string>
+
 </resources>

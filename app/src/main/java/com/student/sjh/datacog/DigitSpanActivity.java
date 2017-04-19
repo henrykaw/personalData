@@ -12,7 +12,7 @@ public class DigitSpanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_digit_span);
     }
-    public void backPressed(View view){
+    public void digitBackPressed(View view){
         Intent intent = new Intent();
         setResult(RESULT_OK,intent);
         finish();

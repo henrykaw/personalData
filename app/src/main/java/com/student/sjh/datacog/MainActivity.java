@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startPressed(View v){
-        Intent mainIntent = new Intent(v.getContext(), DigitSpanActivity.class);
+        Intent mainIntent = new Intent(v.getContext(), Stroop.class);
         startActivityForResult(mainIntent, 0);
     }
 }

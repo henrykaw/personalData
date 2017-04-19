@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DigitSpanActivity"></activity>
+        <activity android:name=".DigitSpanActivity" />
+        <activity android:name=".Stroop"></activity>
     </application>
 
 </manifest>
