@@ -10,6 +10,7 @@
     <color name="colorYellow">#FFEB3B</color>
     <color name="colorOrange">#FF9800</color>
     <color name="colorWhite">#00FFFFFF</color>
+    <color name="colorTrueWhite">#FFFFFF</color>
     <color name="colorTextPrimary">#D9000000</color>
     <color name="colorTextSecondary">#8C000000</color>
 

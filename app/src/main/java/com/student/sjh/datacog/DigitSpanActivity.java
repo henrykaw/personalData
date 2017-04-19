@@ -1,19 +1,16 @@
 package com.student.sjh.datacog;
 
 import android.content.Intent;
-import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
-import android.text.InputType;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.os.Handler;
-import org.w3c.dom.Text;
 import java.util.Random;
 
 public class DigitSpanActivity extends AppCompatActivity {
@@ -23,7 +20,6 @@ public class DigitSpanActivity extends AppCompatActivity {
     int difficulty = 3;
     List<Integer> numbersArray = new ArrayList<>();
     List<Integer> answerArray = new ArrayList<>();
-    long startTime, currentTime, sessionTime;
     Button b;
     final Handler handler = new Handler();
     Random rand = new Random();
@@ -61,7 +57,7 @@ public class DigitSpanActivity extends AppCompatActivity {
     }
     public void startButtonPressed(View v){
         b.setVisibility(View.GONE);
-        titleText.setText(difficulty + " numbers will appear. \n Remember them");
+        titleText.setText(difficulty + " numbers will appear. \n Remember them.");
         numberText.setText("");
 
         handler.postDelayed(new Runnable() {
@@ -92,7 +88,7 @@ public class DigitSpanActivity extends AppCompatActivity {
             @Override
             public void run() {
                 numberText.setText("");
-                titleText.setText("Enter the numbers that appeared");
+                titleText.setText("Enter the numbers in the order they appeared.");
                 TextAnswer.setVisibility(View.VISIBLE);
 
             }
@@ -106,7 +102,7 @@ public class DigitSpanActivity extends AppCompatActivity {
             answerArray.add(Integer.parseInt(TextAnswer.getText().toString().substring(i,i+1)));
         }
         for(int i = 0; i < numbersArray.size(); i++){
-            if(numbersArray.get(i) != answerArray.get(i)){
+            if(!numbersArray.get(i).equals(answerArray.get(i))){
                 errors += 1;
             }
         }
@@ -130,7 +126,7 @@ public class DigitSpanActivity extends AppCompatActivity {
             handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    titleText.setText(difficulty + " numbers will appear. \n Remember them");
+                    titleText.setText(difficulty + " numbers will appear. \n Remember them.");
                     handler.postDelayed(new Runnable() {
                         @Override
                         public void run() {

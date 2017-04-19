@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DigitSpanActivity" />
-        <activity android:name=".Stroop"></activity>
+        <activity android:name=".Stroop" />
+        <activity android:name=".ReponseTime"></activity>
     </application>
 
 </manifest>

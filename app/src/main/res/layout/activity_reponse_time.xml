@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_reponse"
+    android:onClick="screenPressed"
+    tools:context="com.student.sjh.datacog.ReponseTime">
+
+    <Button
+        android:text="@string/start_button_text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_button"
+        android:onClick="reponseStartButtonPressed"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/reponseIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reponse_time_intro"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
