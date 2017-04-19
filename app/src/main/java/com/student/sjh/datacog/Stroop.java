@@ -66,7 +66,6 @@ public class Stroop extends AppCompatActivity {
                 break;
             case R.id.blueButton:
                 // something
-                stroopTv.setTextColor(ContextCompat.getColor(Stroop.this,R.color.colorBlue));
                 disableStroopButtons();
                 checkChoice(getString(R.string.blue));
                 enableStroopButtonsDelay();
@@ -80,7 +79,10 @@ public class Stroop extends AppCompatActivity {
                 break;
             case R.id.greenButton:
                 // Something
-                newColorText();
+                //stroopTv.setTextColor(ContextCompat.getColor(Stroop.this,R.color.colorOrange));
+                disableStroopButtons();
+                checkChoice(getString(R.string.green));
+                enableStroopButtonsDelay();
                 break;
             case R.id.redButton:
                 // Something
