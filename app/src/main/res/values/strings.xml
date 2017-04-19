@@ -23,5 +23,8 @@
     <string name="average_text1">Average</string>
     <string name="average_text2">Average time will be shown here</string>
     <string name="reponse_time_intro">Tap the screen as soon it becomes blue.</string>
+    <string name="Reaction">Reaction time</string>
+    <string name="Stroop">Stroop</string>
+    <string name="Digit_Span">Digit Span</string>
 
 </resources>
