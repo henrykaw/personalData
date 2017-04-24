@@ -120,7 +120,7 @@ public class Stroop extends AppCompatActivity {
         }else if (gameCount == 3){
             Intent intent = new Intent(this, ScoreScreen.class);
             Bundle previousExtras = getIntent().getExtras();
-            String rBest = previousExtras.getString("rbest");
+            String rBest = previousExtras.getString("rBest");
             String rWorst = previousExtras.getString("rWorst");
             String rAvg = previousExtras.getString("rAvg");
             String dDifficulty = previousExtras.getString("dDifficulty");

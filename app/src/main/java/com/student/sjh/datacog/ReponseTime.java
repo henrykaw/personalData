@@ -103,7 +103,7 @@ public class ReponseTime extends AppCompatActivity {
         }
         avg = avg/timeList.size();
         DecimalFormat finalAvg = new DecimalFormat("#.###") ;
-        sAvg = finalAvg.toString();
+        sAvg = finalAvg.format(avg).toString();
         sBest = String.valueOf(best);
         sWorst = String.valueOf(worst);
         /*

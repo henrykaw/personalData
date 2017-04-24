@@ -139,7 +139,7 @@ public class DigitSpanActivity extends AppCompatActivity {
             //titleText.setText("Total runs: " + totalRuns + ", number of errors: " + errors + ", highest level achieved: " + difficulty);
             Intent mainIntent = new Intent(this,Stroop.class);
             Bundle previousExtras = getIntent().getExtras();
-            String rBest = previousExtras.getString("rbest");
+            String rBest = previousExtras.getString("rBest");
             String rWorst = previousExtras.getString("rWorst");
             String rAvg = previousExtras.getString("rAvg");
             Bundle extras = new Bundle();

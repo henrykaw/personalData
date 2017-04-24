@@ -14,7 +14,7 @@ public class ScoreScreen extends AppCompatActivity {
         setContentView(R.layout.activity_score_screen);
         tv =(TextView) findViewById(R.id.scoreText);
         Bundle previousExtras = getIntent().getExtras();
-        String rBest = previousExtras.getString("rbest");
+        String rBest = previousExtras.getString("rBest");
         String rWorst = previousExtras.getString("rWorst");
         String rAvg = previousExtras.getString("rAvg");
         String dDifficulty = previousExtras.getString("dDifficulty");
