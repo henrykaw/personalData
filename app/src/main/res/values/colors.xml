@@ -13,5 +13,6 @@
     <color name="colorTrueWhite">#FFFFFF</color>
     <color name="colorTextPrimary">#D9000000</color>
     <color name="colorTextSecondary">#8C000000</color>
+    <color name="colorShadow">#000000</color>
 
 </resources>

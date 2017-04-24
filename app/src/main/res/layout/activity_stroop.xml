@@ -18,6 +18,10 @@
         android:textColor="@color/colorTextSecondary"
         android:textStyle="bold"
         android:textSize="30sp"
+        android:shadowColor="@color/colorShadow"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
         />
 
     <Button
@@ -29,7 +33,9 @@
         android:text="@string/understood"
         style="@style/Widget.AppCompat.Button.Colored"
         android:theme="@style/ButtonStart"
-        android:onClick="startStroop"/>
+        android:onClick="startStroop"
+
+        />
 
     <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
@@ -61,6 +67,7 @@
             android:textStyle="bold"
             android:textColor="@color/colorBlue"
             android:onClick="colorButtonPres"
+
             />
         <Button
             app:layout_columnWeight="1"
@@ -83,6 +90,7 @@
             android:textStyle="bold"
             android:textColor="@color/colorGreen"
             android:onClick="colorButtonPres"
+
             />
         <Button
             app:layout_columnWeight="1"
@@ -94,6 +102,7 @@
             android:textStyle="bold"
             android:textColor="@color/colorRed"
             android:onClick="colorButtonPres"
+
             />
         <Button
             app:layout_columnWeight="1"
@@ -105,6 +114,10 @@
             android:textStyle="bold"
             android:textColor="@color/colorYellow"
             android:onClick="colorButtonPres"
+            android:shadowColor="@color/colorShadow"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
             />
 
     </android.support.v7.widget.GridLayout>
