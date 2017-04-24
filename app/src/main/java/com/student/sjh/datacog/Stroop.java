@@ -28,6 +28,8 @@ public class Stroop extends AppCompatActivity {
     Random r = new Random();
     int gameCount;
     long tStart,dTime;
+    int corr = 0;
+    int wrong= 0;
 
 
 
@@ -116,7 +118,20 @@ public class Stroop extends AppCompatActivity {
             tStart = System.currentTimeMillis();
             newColorText();
         }else if (gameCount == 3){
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, ScoreScreen.class);
+            Bundle previousExtras = getIntent().getExtras();
+            String rBest = previousExtras.getString("rbest");
+            String rWorst = previousExtras.getString("rWorst");
+            String rAvg = previousExtras.getString("rAvg");
+            String dDifficulty = previousExtras.getString("dDifficulty");
+            Bundle extras = new Bundle();
+            extras.putString("rBest", rBest);
+            extras.putString("rWorst", rWorst);
+            extras.putString("rAvg", rAvg);
+            extras.putString("dDifficulty", dDifficulty);
+            extras.putString("sCorr", String.valueOf(corr));
+            extras.putString("sWrong", String.valueOf(wrong));
+            intent.putExtras(extras);
             startActivity(intent);
         }
     }
@@ -225,6 +240,7 @@ public class Stroop extends AppCompatActivity {
 */
     public void showCorrect(){
         // Parameters for toast
+        corr = corr +1;
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.correct_toast,
                 (ViewGroup) findViewById(R.id.correct_toast));
@@ -237,6 +253,7 @@ public class Stroop extends AppCompatActivity {
     }
     public void showWrong(){
         // Parameters for toast
+        wrong = wrong +1;
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.wrong_toast,
                 (ViewGroup) findViewById(R.id.wrong_toast));

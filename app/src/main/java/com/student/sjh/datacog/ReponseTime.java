@@ -30,6 +30,7 @@ public class ReponseTime extends AppCompatActivity {
     TextView tv,tvIntro;
     RelativeLayout view;
     Button b;
+    String sBest,sWorst,sAvg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +68,13 @@ public class ReponseTime extends AppCompatActivity {
                 setValues();
                 timeList.clear();
                 */
+                setValues();
                 Intent intent = new Intent(this, DigitSpanActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("rBest", sBest);
+                extras.putString("rWorst", sWorst);
+                extras.putString("rAvg", sAvg);
+                intent.putExtras(extras);
                 startActivity(intent);
             }else {
                 spawnElement();
@@ -96,6 +103,14 @@ public class ReponseTime extends AppCompatActivity {
         }
         avg = avg/timeList.size();
         DecimalFormat finalAvg = new DecimalFormat("#.###") ;
+        sAvg = finalAvg.toString();
+        sBest = String.valueOf(best);
+        sWorst = String.valueOf(worst);
+        /*
+        tvBest2.setText(best+" sec");
+        tvWorst2.setText(worst+" sec");
+        tvAve2.setText(finalAvg.format(avg)+" sec");
+        */
     }
     public void addTimeElapse(Long lap, Long press){
         TextView tv = (TextView) findViewById(R.id.textView);
