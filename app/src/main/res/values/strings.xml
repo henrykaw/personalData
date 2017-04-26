@@ -14,7 +14,7 @@
     <string name="yellow">Yellow</string>
     <string name="orange">Orange</string>
     <string name="enter_numbers">Enter the numbers in the order they appeared.</string>
-    <string name="incomin_numbers"> numbers will appear. \n Remember them.</string>
+    <string name="incomin_numbers">Numbers will appear.\n Remember them.</string>
     <string name="start_button_text">Tap to start</string>
     <string name="best_text1">Best</string>
     <string name="best_text2">Best time will  be shown here</string>
