@@ -3,7 +3,7 @@
     <string name="b_start">Start</string>
     <string name="digit_test">This is the new activity.</string>
     <string name="b_back">Back</string>
-    <string name="stroop_letters">Name the color of the letters.</string>
+    <string name="stroop_letters">Tap the button corresponding to the color of the letters (Not the spelled word).</string>
     <string name="stroop_word">Tap the matching button of the spelled word.</string>
     <string name="stroop_end">Exercise completed, tap the button below to continue.</string>
     <string name="understood">Understood</string>
@@ -22,9 +22,9 @@
     <string name="worst_text2">Worst time will be shown here</string>
     <string name="average_text1">Average</string>
     <string name="average_text2">Average time will be shown here</string>
-    <string name="reponse_time_intro">Tap the screen as soon it becomes blue.</string>
+    <string name="reponse_time_intro">This is a reaction time test.\n Tap the screen each time it turns blue as fast as possible.</string>
     <string name="Reaction">Reaction time</string>
     <string name="Stroop">Stroop</string>
-    <string name="Digit_Span">Digit Span</string>
+    <string name="digit_intro">Digit span test \n Instructions will appear when the test begins.</string>
 
 </resources>
